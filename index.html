@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+</head>
+<body class="h-full">
+    <!-- offer part -->
+    <div id="offersection" class="w-full flex gap-2 justify-center items-center h-full p-1 tracking-wider text-center text-white text-xs md:text-lg bg-black">
+        <p>Sign up and <mark class="p-1 m-1">GET 20% OFF</mark>for your first order</p>
+        <div id="offer-delete" class="text-xs cursor-pointer">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <!-- header section -->
+        <nav class="sticky top-0 shadow-xl  w-full bg-gray-50 flex items-center justify-between px-6 lg:px-10 md:px-8">
+            <div class="p-2">
+                <p class="text-2xl font-bold">Nostra</p>
+            </div>
+            <div id="hamburger" class="md:hidden cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+            </div>
+            <!-- nav bar in laptop view -->
+            <ul class="md:flex hidden">
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="index.html" target="_blank">Home</a>
+                </li>
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="#New--Arrival">New Arrival</a>
+                </li>
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="#Most--Wanted">Most wanted</a>
+                </li>
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="collections.html" target="_blank">Collections</a>
+                </li>
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="contacts.html" target="_blank">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- sidenav -->
+        <ul id="sidenav" class=" h-full w-1/2 md:w-1/4 bg-gray-200 pt-28 shadow-2xl fixed top-0 -right-96 transition-all duration-6000 ease ">
+            <div id="fa-xmark" class="absolute top-2 right-2 md:text-2xl cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+                <a href="#">Home</a>
+            </li>
+            <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+                <a href="#New--Arrival">New Arrival</a>
+            </li>
+            <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+                <a href="#Most--Wanted">Most wanted</a>
+            </li>
+            <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+                <a href="collections.html" target="_blank">Collections</a>
+            </li>
+            <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+                <a href="contacts.html" target="_blank">Contact us</a>
+            </li>
+        </ul>
+        <!-- imgslider -->
+    <div class="img-slider flex justify-center">
+        <div class="imgcontainer">
+                <div class="flex justify-evenly items-center h-full">
+                    <div>
+                        <i class="fa-solid fa-angle-left cursor-pointer text-7xl text-white hover:opacity-50"></i>
+                    </div>
+                    <div class="text-white text-center">
+                            <h1 class="font-bold md:pb-3 lg:pb-4 text-md md:text-3xl lg:text-5xl">Level up your style with our</h1>
+                            <p class="pb-2 md:pb-4 text-md md:text-xl lg:text-2xl">Summer Collections</p>
+                            <a href="#" class="text-xs md:text-lg bg-gray-600 p-2 rounded-xl hover:opacity-80">Shop Now &RightArrow;</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-angle-right cursor-pointer text-7xl text-white hover:opacity-50"></i>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- transition container -->
+    <section class="animate-scroll reveal-scroll">
+        <!-- brands -->
+        <div class="p-2">
+            <h1 class="text-2xl font-bold">Brands</h1>
+            <div class="flex justify-around m-1">
+                <div class="flex flex-col items-center">
+                    <img src="./img/icons/adidas.png" alt="adidas" class="w-10 h-10">
+                    <p class="text-center">Adidas</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/icons/behance.png" alt="adidas" class="w-10 h-10">                    
+                    <p class="text-center">Behance</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/icons/leaves.png" alt="adidas" class="w-10 h-10">                    
+                    <p class="text-center">Leaves</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/icons/nike.png" alt="adidas" class="w-10 h-10">
+                    <p class="text-center">Nike</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/icons/simple.png" alt="adidas" class="w-10 h-10">
+                    <p class="text-center">Simple</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/icons/twitch.png" alt="adidas" class="w-10 h-10">
+                    <p class="text-center">Twitch</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./img/icons/puma.png" alt="adidas" class="w-10 h-10">
+                    <p class="text-center">Puma</p>
+                </div>
+            </div>
+        </div>
+        <!-- Ensure Experience -->
+        <div class="flex items-center justify-between w-full p-5">
+            <p class="font-bold text-md md:text-2xl lg:text-4xl">We provide best Customer Experiences</p>
+            <p>We ensure that customer have to best shopping experiencs.</p>
+        </div>
+    </section>
+    <!-- About Experience -->
+    <section class="animate-scroll reveal-scroll mx-2 p-2 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-gray-400 p-4 rounded-2xl">
+            <div class="py-3">
+                <i class="fa-regular fa-circle-check text-4xl"></i>
+            </div>
+            <div>
+                <p class="font-bold">Original Products</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nihil.</p>
+            </div>
+        </div>
+        <div class="bg-gray-400 p-4 rounded-2xl">
+            <div class="py-3">
+                <i class="fa-regular fa-face-smile text-4xl"></i>
+            </div>
+            <div>
+                <p class="font-bold">Satisfaction guarantee</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nihil.</p>
+            </div>
+        </div>
+        <div class="bg-gray-400 p-4 rounded-2xl">
+            <div class="py-3">
+                <i class="fa-solid fa-brush text-4xl"></i>
+            </div>
+            <div>
+                <p class="font-bold">New Arrival Everydays</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nihil.</p>
+            </div>
+        </div>
+        <div class="bg-gray-400 p-4 rounded-2xl">
+            <div class="py-3">
+                <i class="fa-solid fa-truck text-4xl"></i>
+            </div>
+            <div>
+                <p class="font-bold">Fast & Free shipping</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nihil.</p>
+            </div>
+        </div>
+    </section>
+    <!-- New Arrivals -->
+    <section class="animate-scroll reveal-scroll p-2 " id="New--Arrival">
+        <h1 class="font-bold text-3xl lg:text-4xl">New Arrivals</h1>
+
+        <div class="flex gap-2 rounded p-3 justify-center w-full">
+            <!-- img--box--one -->
+            <div class="arrivalimg1 md:h-56">
+                <div class="flex justify-center items-center w-full h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img-box--two -->
+            <div class="arrivalimg2 md:h-56">
+                <div class="flex justify-center items-center w-full h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img--box--three -->
+            <div class="arrivalimg3 md:h-56">
+                <div class="flex justify-center items-center w-full h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- img--box--four -->
+            <div class="arrivalimg4 md:h-56">
+                <div class="flex justify-center items-center w-full h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Most Wanted -->
+   <section class="animate-scroll reveal-scroll p-2 " id="Most--Wanted">
+    <h1 class="font-bold text-3xl lg:text-4xl">Most wanted</h1>
+        <div class="flex max-w-max gap-2 h-48 md:h-64 lg:h-72 overflow-x-scroll ml-3 mt-2">
+            <!-- img--box--one --> 
+            <div class="wantedimg1 ">
+                <!-- sale image -->
+                <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
+
+                <div class="flex justify-center items-center w-max h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- img--box--one -->  <!-- heart icons -->
+                <div class="bg-gray-100 w-full flex justify-end -mt-8">
+                    <div class=" cursor-pointer">
+                        <img src="./img/icons/blackheart.png" class="w-4 md:w-6  blackheart">
+                    </div>
+                </div>
+            </div>
+            <!-- img--box--two --> 
+            <div class="wantedimg2">
+                <!-- sale image -->
+                <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
+
+                <div class="flex justify-center items-center w-max h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- img--box--two -->  <!-- heart icons -->
+                <div class="bg-gray-100 w-full flex justify-end -mt-8">
+                    <div class="cursor-pointer">
+                        <img src="./img/icons/blackheart.png" class="w-4 md:w-6  blackheart">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- img--three -->
+            <div class="wantedimg3 lg:w-72 md:w-72">
+                <!-- sale image -->
+                <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
+
+                <div class="flex justify-center items-center w-max h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- img--box--three -->  <!-- heart icons -->
+                <div class="bg-gray-100 w-full flex justify-end -mt-8">
+                    <div class="cursor-pointer">
+                        <img src="./img/icons/blackheart.png" class="w-4 md:w-6  blackheart">
+                    </div>
+                </div>
+            </div>
+            <!-- img--four -->
+            <div class="wantedimg4 lg:w-72 md:w-72">
+                <!-- sale image -->
+                <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
+
+                <div class="flex justify-center items-center w-max h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- img--box--four -->  <!-- heart icons -->
+                <div class="bg-gray-100 w-full flex justify-end -mt-8">
+                    <div class="cursor-pointer">
+                        <img src="./img/icons/blackheart.png" class="w-4 md:w-6  blackheart">
+                    </div>
+                </div>
+            </div>
+            <!-- img--five -->
+            <div class="wantedimg5 lg:w-72 md:w-72">
+                <!-- sale image -->
+                <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
+
+                <div class="flex justify-center items-center w-max h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- img--box--five -->  <!-- heart icons -->
+                <div class="bg-gray-100 w-full flex justify-end -mt-8">
+                    <div class="cursor-pointer">
+                        <img src="./img/icons/blackheart.png" class="w-4 md:w-6  blackheart">
+                    </div>
+                </div>
+            </div>
+            <!-- img--six -->
+            <div class="wantedimg6 lg:w-72 md:w-72">
+                <!-- sale image -->
+                <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
+
+                <div class="flex justify-center items-center w-max h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- img--box--six -->  <!-- heart icons -->
+                <div class="bg-gray-100 w-full flex justify-end -mt-8">
+                    <div class="cursor-pointer">
+                        <img src="./img/icons/blackheart.png" class="w-4 md:w-6  blackheart">
+                    </div>
+                </div>
+            </div>
+            <!-- img--seven -->
+            <div class="wantedimg7 lg:w-72 md:w-72">
+                <!-- sale image -->
+                <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
+
+                <div class="flex justify-center items-center w-max h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- img--box--seven -->  <!-- heart icons -->
+                <div class="bg-gray-100 w-full flex justify-end -mt-8">
+                    <div class="cursor-pointer">
+                        <img src="./img/icons/blackheart.png" class="w-4 md:w-6 blackheart">
+                    </div>
+                </div>
+            </div>
+            <!-- img--eight -->
+            <div class="wantedimg8 lg:w-72 md:w-72">
+                <!-- sale image -->
+                <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
+
+                <div class="flex justify-center items-center w-max h-full">
+                    <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
+                        <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- img--box--eight -->  <!-- heart icons -->
+                <div class="bg-gray-100 w-full flex justify-end -mt-8">
+                    <div class="cursor-pointer">
+                        <img src="./img/icons/blackheart.png" class="w-4 md:w-6  blackheart">
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+   </section>
+    <!--Limited Offer Frame -->
+    <div class="px-2">
+        <div class="bg-gray-900 p-4 w-full h-full">
+            <div class="flex justify-around items-center gap-2">
+                <div>
+                    <img src="./img/others/offer.jpg" alt="offer images">
+                </div>
+                <div class="text-white">
+                    <h1 class="font-bold md:text-3xl pb-1">Limited Offer</h1>
+                    <p class="text-xs md:text-xl pb-1">35% offer on this for the first 30 customers</p>
+                    <div>
+                        <div class="max-w-max flex items-center mt-1 p-1 bg-white text-black rounded-full md:p-3">
+                            <div class="text-xs md:text-xl">
+                                <a href="#">Shop Now</a>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News Letter -->
+    <section class="py-2">
+        <div class="text-center flex flex-col items-center p-2">
+            <h1 class="font-bold text-xl">Join Our New Letter</h1>
+            <p class="my-2">Signup for our email newspaper to get exclusive discounts,updates abd more.</p>
+            <input type="text" class="border-2 border-black w-3/4">
+            <div class="max-w-max flex items-center gap-2 mt-1 p-2 bg-black text-white rounded-full transform scale-75 md:p-3">
+                <div>
+                    <a href="#">Subscribe</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="p-6 bg-gray-900 text-white">
+        <div>
+            <h1 class="font-bold text-xl">Nostra</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum officia debitis nemo, repellendus sunt!</p>
+            <ul class="flex justify-between w-1/4">
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>&copy;2023 Nostra.com</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

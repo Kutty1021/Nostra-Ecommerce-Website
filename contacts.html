@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="h-full">
+    <!-- header section -->
+    <nav class="sticky top-0 shadow-xl w-full bg-gray-50 flex items-center justify-between px-6 lg:px-10 md:px-8">
+        <div class="p-2">
+            <p class="text-2xl font-bold">Nostra</p>
+        </div>
+        <div id="hamburger" class="md:hidden cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+        </div>
+        <!-- nav bar in laptop view -->
+        <ul class="md:flex hidden">
+            <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                <a href="index.html" target="_blank">Home</a>
+            </li>
+            <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                <a href="#New--Arrival">New Arrival</a>
+            </li>
+            <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                <a href="#Most--Wanted">Most wanted</a>
+            </li>
+            <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                <a href="collections.html" target="_blank">Collections</a>
+            </li>
+            <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                <a href="contacts.html" target="_blank">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- sidenav -->
+    <ul id="sidenav" class="h-full w-1/2 md:w-1/4 bg-gray-300 pt-28 fixed top-0 -right-96 transition-all duration-6000 ease ">
+        <div id="fa-xmark" class="absolute top-2 right-4 md:text-2xl cursor-pointer">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+            <a href="index.html" target="_blank">Home</a>
+        </li>
+        <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+            <a href="#New--Arrival">New Arrival</a>
+        </li>
+        <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+            <a href="#Most--Wanted">Most wanted</a>
+        </li>
+        <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+            <a href="collections.html" target="_blank">Collections</a>
+        </li>
+        <li class="p-2 text-center hover:bg-black hover:text-white transition-all">
+            <a href="contacts.html" target="_blank">Contact us</a>
+        </li>
+    </ul>
+    <!-- form box -->
+    <form class="flex justify-center mt-4">
+        <div class="container w-max md:w-1/2 md:h-96 bg-gray-900 h-max text-white p-4 rounded ">
+            <h1 class="font-bold text-xl py-2">Contact Us</h1>
+            <div class="pb-2">
+                <label for="name" >Name :</label>
+                <input type="text" id="name" class="w-full rounded md:p-2 text-black" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" class="w-full rounded md:p-2 text-black" required>
+            </div>
+            <div>
+                <label for="name">Message :</label>
+                <textarea class="w-full rounded text-black md:h-28"></textarea>
+            </div>
+            <button type="submit" class="hover:opacity-80 transition-all bg-blue-800 p-1 rounded w-1/4 ">Submit</button>
+        </div>
+    </form>
+    <!-- News Letter -->
+    <section class="py-2">
+        <div class="text-center flex flex-col items-center p-2">
+            <h1 class="font-bold text-xl">Join Our New Letter</h1>
+            <p class="my-2">Signup for our email newspaper to get exclusive discounts,updates abd more.</p>
+            <input type="text" class="border-2 border-black w-3/4">
+            <div class="max-w-max flex items-center gap-2 mt-1 p-2 bg-black text-white rounded-full transform scale-75 md:p-3">
+                <div>
+                    <a href="#">Subscribe</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="p-6 bg-gray-900 text-white">
+        <div>
+            <h1 class="font-bold text-xl">Nostra</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum officia debitis nemo, repellendus sunt!</p>
+            <ul class="flex justify-between w-1/4">
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>&copy;2023 Nostra.com</p>
+        </div>
+    </footer>
+    <script src="contacts.js"></script>
+</body>
+</html>
